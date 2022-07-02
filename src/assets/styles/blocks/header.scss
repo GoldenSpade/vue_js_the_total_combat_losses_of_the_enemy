@@ -1,0 +1,116 @@
+.header {
+  background: url(../img/header/header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 0;
+
+  @media(max-width: 518px) {
+    padding: 40px 0;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(max-width: 992px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  &__text {
+    justify-content: center;
+    text-align: left;
+    
+    @media(max-width: 992px) {
+      text-align: center;
+    }
+    @media(max-width: 650px) {
+    }
+  }
+
+  &__title {
+    color: #ded5ce;
+    font-family: "StmprBrk", sans-serif;
+    font-size: 55px;
+    letter-spacing: -5px;
+    border-bottom: 4px solid #ded5ce;
+    padding-bottom: 8px;
+
+    @media(max-width: 1320px) {
+      border: none;
+    }
+
+    @media(max-width: 992px) {
+      letter-spacing: 0;
+    }
+
+    @media(max-width: 768px) {
+      padding-bottom: 20px;
+    }
+
+    @media(max-width: 500px) {
+      border: none;
+      font-size: 40px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 40px;
+    color: #c8a002;
+    letter-spacing: -5px;
+
+    @media(max-width: 768px) {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+
+    @media(max-width: 768px) {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__date {
+    text-align: left;
+    min-width: max-content;
+  }
+
+
+  &__date-day-num {
+    font-size: 90px;
+    color: #c8a002;
+    font-family: 'StmprBrk', sans-serif;
+    margin-left: -14px;
+  }
+
+  &__date-day {
+    color: #ded5ce;
+    font-size: 40px;
+    letter-spacing: -5px;
+    line-height: 32px
+  }
+
+
+  &__date-title {
+    color: #fffc00;
+    font-size: 44px;
+    line-height: 40px
+  }
+
+  &__date-subtitle {
+    font-size: 18px;
+    color: #ded5ce;
+  }
+
+  &__date-today {
+    color: #c8a002;
+    font-size: 30px;
+    letter-spacing: -3.5px;
+    padding-top: 10px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,15 @@
+@import './reset.scss';
+@import './fonts.scss';
+@import './blocks/container.scss';
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body { 
+  font-family: 'Glasten', sans-serif;
+  font-size: 20px;
+  background: #6c7445;
+  text-transform: uppercase;
+}
