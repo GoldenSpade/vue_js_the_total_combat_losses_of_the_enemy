@@ -15,25 +15,25 @@
   </main>
 </template>
 <script>
-import getData from "@/composables/getData";
-import TheLosses from "@/components/TheLosses.vue";
-import Card from "@/components/Card.vue";
+import getData from '@/composables/getData'
+import TheLosses from '@/components/TheLosses.vue'
+import Card from '@/components/Card.vue'
 
 export default {
-  components: { Card, TheLosses },
+  components: {Card, TheLosses},
 
-  setup(props) {
-    const { arrHalf1, arrHalf2, load } = getData();
+  setup() {
+    const {arrHalf1, arrHalf2, load} = getData()
 
-    load();
+    load()
 
     return {
       arrHalf1,
       arrHalf2,
-    };
+    }
   },
-};
+}
 </script>
 <style lang="scss">
-@import "@/assets/styles/blocks/content.scss";
+  @import '@/assets/styles/blocks/content.scss';
 </style>

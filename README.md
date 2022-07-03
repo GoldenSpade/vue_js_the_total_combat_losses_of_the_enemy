@@ -1,19 +1,19 @@
-# vue_js_the_total_combat_losses_of_the_enemy
+## THE TOTAL COMBAT LOSES OF THE ENEMY ##
 
-## Project setup
-```
-npm install
-```
+### Description ###
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+The SPA application displays the number of enemy losses in the war that began on 02/24/2022 and continues to this day.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+All data comes from the server via [API](https://russian warship.rip/).
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Image addresses are loaded into the resulting array separately from the local object.
+
+#### Technology Stack: ####
+
+* HTML
+* SASS / SCSS;
+* JavaScript;
+* Vue.JS 3;
+* Composition API.
+
+### [DEMO](https://billizane.github.io/vue_js_the_total_combat_losses_of_the_enemy/) ###

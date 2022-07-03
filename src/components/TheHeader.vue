@@ -30,24 +30,23 @@
 </template>
 
 <script>
-import { computed } from "vue";
-import getData from "@/composables/getData";
+import getData from '@/composables/getData'
 export default {
   setup() {
-    const { currentDate, day, load } = getData();
+    const {currentDate, day, load} = getData()
+    const date = currentDate()
 
-    load();
-
-    const date = computed(() => currentDate());
+    load()
 
     return {
+      currentDate,
       date,
       day,
-    };
+    }
   },
-};
+}
 </script>
 
 <style lang="scss">
-@import "@/assets/styles/blocks/header.scss";
+  @import '@/assets/styles/blocks/header.scss';
 </style>

@@ -10,18 +10,25 @@
         alt="Losses image"
         class="losses__img"
       />
-      <div class="losses__amount">>35000</div>
+      <div class="losses__amount">>{{ personalUnits }}</div>
     </div>
   </div>
 </template>
 <script>
+import getData from '@/composables/getData'
 export default {
   props: ['cssClass'],
-  setup(props) {
-    console.log('props', props)
-  }
-};
+  setup() {
+    const {personalUnits, load} = getData()
+
+    load()
+
+    return {
+      personalUnits,
+    }
+  },
+}
 </script>
 <style lang="scss">
-  @import "@/assets/styles/blocks/losses.scss";
+  @import '@/assets/styles/blocks/losses.scss';
 </style>

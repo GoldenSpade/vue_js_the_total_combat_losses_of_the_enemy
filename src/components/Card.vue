@@ -7,18 +7,13 @@
     </div>
     <div class="card__amount">{{ item[1] }}</div>
   </div>
-
-  <!-- <img src="../img/" alt=""> -->
 </template>
 
 <script>
 export default {
-  props: ["item"],
-  setup(props) {
-    // console.log(props);
-  },
-};
+  props: ['item'],
+}
 </script>
 <style lang="scss">
-  @import "@/assets/styles/blocks/card.scss";
+  @import '@/assets/styles/blocks/card.scss';
 </style>
