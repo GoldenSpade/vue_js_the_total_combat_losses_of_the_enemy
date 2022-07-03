@@ -2,9 +2,9 @@
 
 ### Description ###
 
-The SPA application displays the number of enemy losses in the war that began on 02/24/2022 and continues to this day.
+The SPA application displays the number of enemy losses in the war that began on 2022/02/24 and continues to this day.
 
-All data comes from the server via [API](https://russian warship.rip/).
+All data comes from the server via [API](https://https://russianwarship.rip).
 
 Image addresses are loaded into the resulting array separately from the local object.
 
