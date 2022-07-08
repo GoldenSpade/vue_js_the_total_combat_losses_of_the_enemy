@@ -15,8 +15,7 @@
         />
         <div class="header__date">
           <div class="header__date-day">
-            <span class="header__date-day-num">{{ day }}</span
-            >День
+            <span class="header__date-day-num">{{ day }}</span>День
           </div>
           <div class="header__date-title">Боротьби</div>
           <div class="header__date-subtitle">Day of confrontation</div>

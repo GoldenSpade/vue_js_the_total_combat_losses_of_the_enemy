@@ -7,9 +7,9 @@
   </div>
   <div class="app-message" v-if="error">
     <div class="app-message__inner">
-      <div class="app-message__text">Вибачте за незрусності.</div>
-      <div class="app-message__text">Дані ще поновлюються.</div>
-      <div class="app-message__text">Спробуйте будь ласка пізніше.</div>
+      <div class="app-message__text">Вибачте за незрусності</div>
+      <div class="app-message__text">Дані ще поновлюються</div>
+      <div class="app-message__text">Спробуйте будь ласка пізніше</div>
     </div>
   </div>
 </template>
