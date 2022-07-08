@@ -22,23 +22,18 @@
   </footer>
 </template>
 <script>
-import {computed} from 'vue'
 import getData from '@/composables/getData'
 
 export default {
   setup() {
-    const {currentDate} = getData()
-    const currentYear = computed(
-      () => `20${currentDate().split('.').reverse()[0]}`
-    )
+    const currentYear = new Date().getFullYear()
 
     return {
-      currentDate,
       currentYear,
     }
   },
 }
 </script>
 <style lang="scss">
-  @import '@/assets/styles/blocks/footer.scss';
+@import '@/assets/styles/blocks/footer.scss';
 </style>
