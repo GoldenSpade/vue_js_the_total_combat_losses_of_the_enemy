@@ -1,63 +1,63 @@
 import {ref} from 'vue'
 
-const weaponNames = [
+const weaponNames = ref([
   {
     ua: 'Втрати особового складу',
-    en: 'Personnel losses',
+    en: 'Personnel losses'
   },
   {
     ua: 'Танки',
-    en: 'Tanks',
+    en: 'Tanks'
   },
   {
     ua: 'ББМ',
-    en: 'APV',
+    en: 'APV'
   },
   {
     ua: 'Арт. системи',
-    en: 'Artillery systems',
+    en: 'Artillery systems'
   },
   {
     ua: 'РСЗВ',
-    en: 'MLRS',
+    en: 'MLRS'
   },
   {
     ua: 'Засоби ППО',
-    en: 'Anti-aircraft warface systems',
+    en: 'Anti-aircraft warface systems'
   },
   {
     ua: 'Літаки',
-    en: 'Planes',
+    en: 'Planes'
   },
   {
     ua: 'Гелікоптери',
-    en: 'Helicopters',
+    en: 'Helicopters'
   },
   {
     ua: 'Автотехніка',
-    en: 'Vehicles',
+    en: 'Vehicles'
   },
   {
     ua: 'Кораблів, катерів',
-    en: 'Ships and boats',
+    en: 'Ships and boats'
   },
   {
     ua: 'Крил. ракет',
-    en: 'Cruise missiles',
+    en: 'Cruise missiles'
   },
   {
     ua: 'Бпла',
-    en: 'UAV',
+    en: 'UAV'
   },
   {
     ua: 'Спец. техніки',
-    en: 'Special Equipment',
+    en: 'Special Equipment'
   },
   {
     ua: 'Отрк / Трк',
-    en: 'OTMS',
-  },
-]
+    en: 'OTMS'
+  }
+])
 
 // get current date
 
@@ -67,7 +67,7 @@ const currentDate = () => {
   const month = date.getMonth() + 1
   const year = date.getFullYear()
 
-  function addZero(month) {
+  function addZero (month) {
     if (+month < 10) {
       return `0${month}`
     } else {
@@ -102,14 +102,13 @@ const getData = () => {
       }
       const res = await data.json()
 
-      Object.entries(res.data.stats).forEach((x, i) =>
+      Object.entries(res.data.stats).forEach((x, i) => {
         statsDataArr.push([
           ...x,
-          weaponNames[i].ua,
-          weaponNames[i].en,
-          `./img/losses/img-${i + 1}.png`,
+          weaponNames.value[i],
+          `./img/losses/img-${i + 1}.png`
         ])
-      )
+      })
 
       for (let i = 1; i <= 9; i++) {
         arrHalf1.value.push(statsDataArr[i])
@@ -123,7 +122,6 @@ const getData = () => {
       day.value = res.data.day
     } catch (err) {
       error.value = err.message
-      console.log(error.value)
     }
   }
 
@@ -134,7 +132,7 @@ const getData = () => {
     arrHalf1,
     arrHalf2,
     personalUnits,
-    load,
+    load
   }
 }
 

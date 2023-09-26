@@ -4,7 +4,7 @@
       <div class="footer__inner">
         <div class="footer__item">
           <div class="footer__item-text footer__item--yellow">
-            <a href="https://github.com/BilliZane" target="_blank">Dev</a>
+            <a href="https://github.com/GoldenSpade" target="_blank">Dev</a>
           </div>
         </div>
         <div class="footer__item footer__item--center">

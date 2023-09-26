@@ -16,4 +16,4 @@ Image addresses are loaded into the resulting array separately from the local ob
 * Vue.JS 3;
 * Composition API.
 
-### [DEMO](https://billizane.github.io/vue_js_the_total_combat_losses_of_the_enemy/) ###
+### [DEMO](https://GoldenSpade.github.io/vue_js_the_total_combat_losses_of_the_enemy/) ###

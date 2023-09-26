@@ -27,7 +27,7 @@ import getData from '@/composables/getData'
 export default {
   name: 'App',
   components: {TheHeader, TheContent, TheFooter, TheLoader},
-  setup() {
+  setup () {
     onBeforeMount(() => {
       document.title = 'Загальні втрати противника'
     })
@@ -46,9 +46,9 @@ export default {
     return {
       isShow,
       error,
-      load,
+      load
     }
-  },
+  }
 }
 </script>
 

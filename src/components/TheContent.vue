@@ -22,18 +22,18 @@ import Card from '@/components/Card.vue'
 export default {
   components: {Card, TheLosses},
 
-  setup() {
+  setup () {
     const {arrHalf1, arrHalf2, load} = getData()
 
     load()
 
     return {
       arrHalf1,
-      arrHalf2,
+      arrHalf2
     }
-  },
+  }
 }
 </script>
 <style lang="scss">
-  @import '@/assets/styles/blocks/content.scss';
+@import '@/assets/styles/blocks/content.scss';
 </style>
